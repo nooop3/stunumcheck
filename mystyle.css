@@ -1,0 +1,38 @@
+div#header {
+    background-color:#99bbbb;
+    height:55px;
+    width:100%;
+    padding-top:1px;
+    padding-bottom:25px;
+    text-align:center;
+    }
+div#content {
+    background-color:#EEEEEE;
+    width:100%;
+    margin:0;
+    padding:5px;
+    text-align:center;
+    }
+div#footer {
+    background-color:#99bbbb;
+    height:20px;
+    width:100%;
+    padding:10px;
+    text-align:center;
+    clear:both;
+    }
+div#declaration {
+    background-color:#FFE4B5;
+    text-align:left;
+    box-align:center;
+    font-size: 10px;
+    line-height: 150%;
+    padding:10px 10px 10px 20%;
+    }
+h1 {
+    font-size: 35px;
+    }
+p {
+    font-size:20px;
+    line-height:150%;
+    }
