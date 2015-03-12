@@ -16,15 +16,9 @@
     <div id="content">
       <p>只知道同学姓名，想要学号，来这里试试！</P>
       <form>
-        <p>大名：<input type="text" id="name" />
-          <select id="grade">
-            <option value="stuno2011">2011级</option>
-            <option value="stuno2012" selected="selected">2012级</option>
-            <option value="stuno2013">2013级</option>
-          </select><p/>
-        <input type="button" value="确定" onclick="showInfo()"></button><br/>
+        <p>大名：<input type="text" id="name" onkeyup="showInfo(this.value)"/>
       </form>
-      <p id="result"><b>结果显示区</b></p>
+      <p id="result"><b></b></p>
     </div>
     <div id="declaration">
         <h2>温馨(xin)提示:<h2>

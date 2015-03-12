@@ -1,10 +1,6 @@
 var xmlHttp
 
-function showInfo() {
-    var name
-    var grade 
-    name = document.getElementById("name").value 
-    grade = document.getElementById("grade").value
+function showInfo(name) {
     if (name.length == 0) {
         document.getElementById("result").innerHTML = ""
         return
@@ -16,7 +12,6 @@ function showInfo() {
     }
     var url = "search.php"
     url = url + "?name=" + name 
-    url = url + "&grade=" + grade 
     url = url + "&sid=" + Math.random() 
     xmlHttp.onreadystatechange = stateChanged 
     xmlHttp.open("GET", url, true) 
