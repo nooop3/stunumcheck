@@ -1,34 +1,40 @@
-<!DOCTYPE HTML>
-<html>    
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="Content-Language" content="zh-cn" />
-    <meta name="author" content="zhendezhendong" />
-    <meta name="keyewords" content="厦大 学号 查询" />
-    <meta name="description" content="只知道同学姓名，想要学号，来这里试试！"/>
-    <link rel="stylesheet" type="text/css" href="mystyle.css" />
-    <title>厦大学号查询系统</title>    
-    <script src="showInfo.js"></script>
-</head>
-    
-<body>
-    <div id="header"><h1>欢迎查询厦大学生学号</h1></div>
-    <div id="content">
-      <p>只知道同学姓名，想要学号，来这里试试！</P>
-      <form>
-        <p>大名：<input type="text" id="name" onkeyup="showInfo(this.value)"/>
-      </form>
-      <p id="result"><b></b></p>
-    </div>
-    <div id="declaration">
-        <h2>温馨(xin)提示:<h2>
-            <ol>
-              <li>查询结果来自网络，本人只是个虫子。</li>
-              <li>代码是练手的，随时可能更改，客官下次赶早。</li>
-              <li>本次赞助商本商场场主对本活动具有最高及最终解释权。</li>
-              <li>如果浏览本网站有任何不适状况，请关闭网页并及时就医，以免影响心情。</li>
-            </ol>
-      </div>
-    <div id="footer">版权所有 &copy; <a href="http://weibo.com/zhendezhendong">真的振东</a><div>     
-</body>      
+<!DOCTYPE html>
+<html lang="Zh-cn">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=dege">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>厦大学号查询系统</title>
+		<script src="showInfo.js"></script>
+		
+		<!-- Bootstrap -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+	<body>
+		<div class="container">
+            <h1	class="text-center">欢迎查询厦大学生学号<br/>
+				<small>想追男神女神，来这里试试！</small></h1>
+			<div class="text-center">
+				<form class="form-inline">
+					<label for="InputName">大名</label>
+					<input type="text" class="form-comtrol" id="name"  placeholder="刘娜" onkeyup="showInfo(this.value)"/>
+                </form><br/>
+				<table class="table table-striped table-responsive table-condensed" id="result"></table>
+			</div>
+			<div class="text-center"><b>版权所有 &copy; <a href="http://weibo.com/zhendezhendong">真的振东</a></b>
+            </div> 
+    	</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    	<!-- Include all compiled plugins (below), or include individual files as needed -->
+    	<script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
 </html>
